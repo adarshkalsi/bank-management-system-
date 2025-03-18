@@ -1,20 +1,28 @@
-# Bank Management System
+# Bank Management System (ATM Simulator System)
 
-This repository contains a Bank Management System project developed in C++. The application simulates basic banking operations, allowing users to create accounts, deposit and withdraw funds, and view account details.
+This repository contains a Java-based Bank Management System, also known as the ATM Simulator System. It functions similarly to a normal ATM, allowing users to perform essential banking operations such as account creation, deposits, withdrawals, and PIN changes.
 
 ## Features
 
-- **Account Creation**: Users can open new bank accounts by providing necessary personal information.
-- **Deposit and Withdrawal**: Users can deposit funds into or withdraw funds from their accounts.
-- **Account Details**: Users can view details of their existing accounts, including current balance and personal information.
-- **Account Management**: Users can update personal information associated with their accounts or close their accounts if desired.
+- **Open Bank Account**: Users can create a new banking account.
+- **Deposit Money**: Users can deposit funds into their accounts.
+- **Withdraw Money**: Users can withdraw cash from their accounts.
+- **Mini Statement**: Users can view a brief summary of recent transactions.
+- **PIN Change**: Users can update their ATM PIN for security.
+
+## Technologies Used
+
+- **Programming Language**: Core Java (Swing & AWT)
+- **Database**: MySQL
+- **IDE**: NetBeans
 
 ## Getting Started
 
 ### Prerequisites
 
-- A C++ compiler (e.g., GCC)
-- Basic understanding of C++ programming
+- Java Development Kit (JDK)
+- MySQL Server
+- NetBeans IDE
 
 ### Installation
 
@@ -25,35 +33,36 @@ This repository contains a Bank Management System project developed in C++. The 
    cd bank-management-system-
    ```
 
-2. **Compile the Program**:
+2. **Import Project into NetBeans**:
 
-   Use the following command to compile the program:
+   - Open NetBeans IDE
+   - Click on `File -> Open Project`
+   - Select the cloned repository folder
+   - Click `Open`
 
-   ```bash
-   g++ bank_management_system.cpp -o bank_management_system
-   ```
+3. **Set Up the Database**:
 
-3. **Run the Program**:
+   - Open MySQL and create a database:
+   
+     ```sql
+     CREATE DATABASE bank_management;
+     ```
+   - Import the provided SQL file (if available) to set up the necessary tables.
 
-   After successful compilation, run the executable:
+4. **Run the Application**:
 
-   ```bash
-   ./bank_management_system
-   ```
+   - In NetBeans, right-click on the project and select `Run`.
 
 ## Usage
 
-Upon running the program, a menu will be displayed with the following options:
+Upon launching the application, users can:
 
-1. **Create a New Account**: Follow the prompts to enter personal information and set up a new account.
-2. **Deposit Funds**: Enter your account number and the amount to deposit.
-3. **Withdraw Funds**: Enter your account number and the amount to withdraw.
-4. **View Account Details**: Enter your account number to view current balance and personal information.
-5. **Update Account Information**: Modify personal details associated with your account.
-6. **Close Account**: Permanently delete your account from the system.
-7. **Exit**: Close the application.
-
-Follow the on-screen instructions to navigate through these options.
+1. **Create a New Account**: Enter necessary details to create an account.
+2. **Deposit Money**: Add funds to an existing account.
+3. **Withdraw Money**: Withdraw available balance from an account.
+4. **View Mini Statement**: See recent transactions.
+5. **Change PIN**: Update security PIN.
+6. **Exit**: Close the application.
 
 ## Contributing
 
@@ -71,9 +80,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-- Inspired by various banking system projects and tutorials available online.
-- Special thanks to the open-source community for continuous support and contributions.
+- Inspired by real-world ATM systems.
+- Thanks to the open-source community for their contributions and support.
 
 ---
 
-*Note: This project is intended for educational purposes and may not cover all aspects of a real-world banking system.*
+*Note: This project is for educational purposes and does not represent a real banking system.*
